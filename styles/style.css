@@ -119,10 +119,6 @@ header .contact a:hover {
 	transform: scale(1.1);
 }
 
-header .contact a.active {
-	color: var(--main-color);
-}
-
 header .contact a i {
 	font-size: 1.5rem;
 	color: var(--main-color);
@@ -132,6 +128,10 @@ header .contact a .text {
 	color: var(--text-color);
 	font-size: 1.1rem;
 	font-weight: 500;
+}
+
+header .contact a.active .text {
+	color: var(--main-color);
 }
 
 header .logo img {
@@ -858,16 +858,14 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/* top: 40px; */
-	border-top: 2px solid #ccc;
-	border-bottom: 2px solid #ccc;
-	border-left: 2px solid #ccc;
 	border-radius: 10px 0px 0px 10px;
 
-	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(4px); */
-	background-color: #f2f6ff;
+	/* border-top: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+	border-left: 2px solid #ccc; */
+
+	/* background-color: #f2f6ff;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 1); */
 }
 
 .contact .contact-section .cs-item {
@@ -883,7 +881,6 @@ footer {
 
 .contact .contact-section .icon {
 	width: 70px;
-	/* min-width: 70px; */
 	height: 70px;
 	border: 2.5px solid var(--main-color);
 	border-radius: 100px;
@@ -903,16 +900,13 @@ footer {
 	font-size: 1.1rem;
 	font-weight: 600;
 	color: var(--main-color);
-	/* background: lightcoral; */
 }
 
 .contact .contact-section .info {
 	width: fit-content;
 	height: fit-content;
 	padding-left: 10px;
-	/* font-size: large; */
 	font-weight: 500;
-	/* background: lightgoldenrodyellow; */
 }
 
 
@@ -920,17 +914,25 @@ footer {
 	width: 400px;
 	min-width: 250px;
 	position: relative;
-	/* top: 40px; */
 	text-align: center;
 	padding: 20px;
-	border: 2px solid #ccc;
 	border-radius: 10px;
 	color: var(--main-color);
 
-	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(4px); */
-	background-color: #f2f6ff;
+	/* border: 2px solid #ccc; */
+
+	/* background-color: #f2f6ff;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 1); */
+}
+
+.contact .contact-section,
+.contact .contact-form {
+	background-color: #cbd7ef;
+	background-image: url(../assets/background/header.png);
+	background-position: 50% 0px;
+	background-size: cover;
+	/* box-shadow: 0px 0px 5px rgba(0, 0, 0, 1); */
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 }
 
 .contact .contact-section.csa-cs {
@@ -949,7 +951,6 @@ footer {
 	padding-right: 15px;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
 	align-items: center;
 }
 
@@ -971,10 +972,7 @@ footer {
 }
 
 .contact .contact-form .contact-submit-after {
-	/* height: 350px; */
-	/* margin-top: 10px; */
 	padding: 30px 0px 10px 0px;
-	/* display: flex; */
 	display: none;
 	justify-content: center;
 	align-items: center;
@@ -989,7 +987,6 @@ footer {
 }
 
 .contact .contact-form .contact-submit-after .box {
-	/* background-color:cornsilk; */
 	width: 335px;
 	padding: 20px;
 	border-radius: 10px;
@@ -998,10 +995,11 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 2px solid #ccc;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(4px);
 
+	/* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(4px); */
+	/* background-color:cornsilk; */
 }
 
 .contact .contact-form .contact-submit-after .csa-icon {
@@ -1064,7 +1062,6 @@ footer {
 
 .contact .contact-form .email-error,
 .contact .contact-form .error {
-	/* background-color: gray; */
 	width: fit-content;
 	display: none;
 	justify-content: center;
@@ -1114,7 +1111,7 @@ footer {
 .contact .contact-form .contact-button.loading {
 	height: 55px;
 	width: 97.7px;
-	background-color: gray;
+	background-color: lightgray;
 }
 
 .contact .contact-form .contact-load {
@@ -1165,10 +1162,6 @@ footer {
 		min-width: fit-content;
 		display: block;
 		padding: 0px;
-		/* margin-left: auto;
-		margin-right: auto; */
-		/* position: relative;
-		top: 100px; */
 	}
 
 	.contact .mobile-show {
@@ -1177,14 +1170,13 @@ footer {
 	}
 
 	.contact .contact-full .contact-section {
-		width: 85%;
+		width: 100%;
 		min-width: 300px;
 		height: fit-content;
 		padding: 20px 0px 25px 15px;
-		margin-right: auto;
-		margin-left: auto;
-		border-right: 2px solid #ccc;
 		border-radius: 10px;
+
+		/* border-right: 2px solid #ccc; */
 	}
 
 	.contact .contact-section .cs-item {
@@ -1202,17 +1194,16 @@ footer {
 	}
 
 	.contact .contact-full .contact-form {
-		margin-top: 25px;
-		width: 85%;
+		margin-top: 50px;
+		width: 100%;
 		min-width: 300px;
-		border-left: 2px solid #ccc;
-		margin-right: auto;
-		margin-left: auto;
 		border-radius: 10px;
+
+		/* border-left: 2px solid #ccc; */
 	}
 
 	.contact .contact-form .contact-submit-after .box {
-		width: auto;
+		width: 100%;
 	}
 
 

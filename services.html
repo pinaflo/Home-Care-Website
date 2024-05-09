@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTHER TERESA HOME CARE</title>
+
+    <!-- Link to the style.css -->
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+    <!-- Link to the favicon -->
+    <link rel="icon" href="./assets/favicon.png" type="image/png" sizes="32x32">
+
+    <!-- Link to add the Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- Link to add the boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="./index.html" class="logo">
+            <img src="./assets/logo (1).png" alt="">
+            <div class="text">
+                MTHC
+            </div>
+        </a>
+        <nav class="navbar">
+            <ul>
+                <li class="nav-item"><a href="./about.html" class="active">About</a></li>
+                <li class="nav-item"><a href="./services.html">Services</a></li>
+                <li class="nav-item"><a href="./volunteer.html">Volunteer</a></li>
+                <li class="nav-item"><a href="./resources.html">Resources</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a href="./contact.html">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="text">
+                    Contact
+                </div>
+            </a>
+        </div>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars menu-icon-i"></i>
+            <!-- <i class="fa-solid fa-x"></i> -->
+        </div>
+    </header>
+
+    <main class="services">
+        <h1>Services</h1>
+    </main>
+
+    <footer class="footer">
+        <div class="left">
+            &copy; 2024 • MTHC • All Rights Reserved
+        </div>
+        <div class="right">
+            <div class="social">
+                <a href="https://www.facebook.com/ritoncharlox" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/ritoncharlox" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/ritoncharlox" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/ritoncharlox" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="nav-touch-close" id="nav-tc-js"></div>
+
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("mg50UONVh0u7USsVq");
+        })();
+    </script>
+    
+</body>
+
+</html>
