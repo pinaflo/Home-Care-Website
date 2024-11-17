@@ -1,1 +1,1 @@
-<h1 align=center>Responsive Portfolio Website</h1>
+<h2>Responsive Portfolio Website</h2>
